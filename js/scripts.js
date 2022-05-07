@@ -7,6 +7,8 @@ $(document).ready(function(){
       const selectedToppings = $(this).val();
       console.log(selectedToppings);
     })
+    const selectedSize = $("input:radio[name=size]:checked").val();
+    console.log(selectedSize);
   })
 })
 
