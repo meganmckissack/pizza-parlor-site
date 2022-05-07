@@ -11,15 +11,15 @@ $(document).ready(function(){
     const selectedSize = $("input:radio[name=size]:checked").val();
     let selectedPizza = new Pizza(selectedToppings, selectedSize);
     let selectedPizzaCost = selectedPizza.pizzaCost();
-    console.log(selectedPizzaCost);
+    
     // Show order details and cost
+    $("#order-details").show();
     let viewToppings = selectedToppings.join(", ");
     $(".order-size").html(selectedSize);
     $(".order-toppings").html(viewToppings);
     $(".order-total").html(selectedPizzaCost);
-
-  })
-})
+  });
+});
 
 
 
