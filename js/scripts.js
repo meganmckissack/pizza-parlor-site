@@ -18,7 +18,7 @@ Pizza.prototype.pizzaCost = function () {
   } else if (this.size === "large") {
     return toppingsCost + 20
   }
-  console.log(toppingsCost);
+  return toppingsCost
 };
 
 
