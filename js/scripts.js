@@ -10,8 +10,16 @@ Pizza.prototype.pizzaCost = function () {
     toppingsCost = (index + 1) * 2;
     return toppingsCost
   })
-  console.log(this.toppings + " " + toppingsCost);
-}
+  
+  if (this.size === "small") {
+    return toppingsCost + 16
+  } else if (this.size === "medium") {
+    return toppingsCost + 18
+  } else if (this.size === "large") {
+    return toppingsCost + 20
+  }
+  console.log(toppingsCost);
+};
 
 
 

@@ -19,3 +19,8 @@
 **Test:** "It should return the cost of a pizza with multiple toppings"
 **Code:** pizza1.pizzaCost()
 **Expected Output:** 6
+
+**Test:** "It should return the cost of a pizza with multiple toppings based on size"
+**Code:** const pizza1 = new Pizza(["pepperoni", "pineapple", "bacon"], "large");
+pizza1.pizzaCost()
+**Expected Output:** 26
