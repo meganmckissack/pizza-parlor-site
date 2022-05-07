@@ -25,25 +25,31 @@
     <div class="form-group">
       <div class="radio">
         <label>
-          <input type="radio" name="size" value="small" checked>
+          <input type="radio" name="size" value="Small" checked>
           Small
         </label>
       </div>
       <div class="radio">
         <label>
-          <input type="radio" name="size" value="medium">
+          <input type="radio" name="size" value="Medium">
           Medium
         </label>
       </div>
       <div class="radio">
         <label>
-          <input type="radio" name="size" value="large">
+          <input type="radio" name="size" value="Large">
           Large
         </label>
       </div>
     </div>
     <button type="submit">Add to order</button>
   </form>
+  <div id="order-details">
+    <h3>Your order details</h3>
+    <p><span class="order-size"></span> Pizza</p>
+    <p><span class="order-toppings"></span></p>
+    <p>Order total: $<span class="order-total"></span>.00</p>
+  </div>
 </div>
 
 </html>

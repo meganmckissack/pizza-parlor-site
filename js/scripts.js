@@ -8,14 +8,15 @@ $(document).ready(function(){
       const pizzaToppings = $(this).val();
       selectedToppings.push(pizzaToppings);
     });
-    
     const selectedSize = $("input:radio[name=size]:checked").val();
-
     let selectedPizza = new Pizza(selectedToppings, selectedSize);
-    console.log(selectedPizza);
-
     let selectedPizzaCost = selectedPizza.pizzaCost();
     console.log(selectedPizzaCost);
+    // Show order details and cost
+    let viewToppings = selectedToppings.join(", ");
+    $(".order-size").html(selectedSize);
+    $(".order-toppings").html(viewToppings);
+    $(".order-total").html(selectedPizzaCost);
 
   })
 })
@@ -35,11 +36,11 @@ Pizza.prototype.pizzaCost = function () {
     return toppingsCost
   })
   
-  if (this.size === "small") {
+  if (this.size === "Small") {
     return toppingsCost + 16
-  } else if (this.size === "medium") {
+  } else if (this.size === "Medium") {
     return toppingsCost + 18
-  } else if (this.size === "large") { //typescript error appears when using else without if
+  } else if (this.size === "Large") { //typescript error appears when using else without if
     return toppingsCost + 20
   }
   return toppingsCost
