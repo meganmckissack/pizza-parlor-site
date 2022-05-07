@@ -3,22 +3,29 @@ $(document).ready(function(){
   $("form#pizza-toppings").submit(function(event) {
     event.preventDefault();
 
-    $("input:checkbox[name=pizza-toppings]:checked").each(function() {
-      const selectedToppings = $(this).val();
-      console.log(selectedToppings);
-    })
+    let selectedToppings = []
+    $("input:checkbox[name=pizza-toppings-input]:checked").each(function() {
+      const pizzaToppings = $(this).val();
+      selectedToppings.push(pizzaToppings);
+    });
+    
     const selectedSize = $("input:radio[name=size]:checked").val();
-    console.log(selectedSize);
+
+    let selectedPizza = new Pizza(selectedToppings, selectedSize);
+    console.log(selectedPizza);
+
+    let selectedPizzaCost = selectedPizza.pizzaCost();
+    console.log(selectedPizzaCost);
+
   })
 })
 
 
 
 
-function Pizza(toppings = [], size, cost) {
+function Pizza(toppings = [], size) {
   this.toppings = toppings;
   this.size = size;
-  this.cost = cost;
 }
 
 Pizza.prototype.pizzaCost = function () {
@@ -38,6 +45,3 @@ Pizza.prototype.pizzaCost = function () {
   return toppingsCost
 };
 
-
-
-const pizza1 = new Pizza(["pepperoni", "pineapple", "bacon"], "large");
