@@ -1,5 +1,5 @@
-function Pizza(toppings) {
+function Pizza(toppings = []) {
   this.toppings = toppings;
 }
 
-const Pizza1 = new Pizza("pepperoni");
+const Pizza1 = new Pizza(["pepperoni", "pineapple", "bacon"]);
