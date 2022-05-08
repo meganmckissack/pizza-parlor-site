@@ -32,6 +32,12 @@ header img {
   padding-bottom: 10%;
 }
 
+.radio-wrapper {
+  display: flex;
+  justify-content: space-around;
+  
+}
+
 .detail-wrapper {
   background-color: #99C997;
   margin-top: 3%;
