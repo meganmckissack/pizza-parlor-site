@@ -16,7 +16,7 @@ The pizza parlor site project is a mock website for a pizza parlor that you can 
 
 - clone or download this repository to your computer
 - Open files in your favorite text editor or IDE
-- To view the pizza parlor site, open the index.html file in your web browser
+- To view the pizza parlor site, open the index.html file in your web browser or click this link [Pizza Parlor](https://meganmckissack.github.io/pizza-parlor-site/)
 
 - _To test the app functionality:_
 
