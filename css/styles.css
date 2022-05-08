@@ -1,3 +1,47 @@
+body {
+  background-color: #FEF9E6;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #C6452C;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  color: #FEF9E6;
+}
+
+header img {
+  width: 15%;
+  height: 15%;
+  margin: 2% 45%;
+  padding-bottom: 3%;
+}
+
+.pizza-size-imgs{
+  display: flex;
+  flex-direction: row;
+}
+
+.pizza-size-imgs img {
+  padding: 3%;
+}
+
+.radio-btn {
+  padding-bottom: 10%;
+}
+
+.detail-wrapper {
+  background-color: #99C997;
+  margin-top: 3%;
+  justify-content: center;
+}
+
 #order-details {
   display: none;
+  margin: 0 auto;
+  padding: 2%;
+  color: #C6452C;
+  
 }

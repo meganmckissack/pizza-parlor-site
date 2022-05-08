@@ -12,43 +12,56 @@
 <body>
 
 </body>
-<div class="container">
+<header>
+  <img src="media/logo.svg" alt="pizza parlor text logo">
+</header>
+<div class="wrapper">
+  <div class="pizza-size-imgs">
+    <img src="media/sm-circle.svg" alt="small circle with small text">
+    <img src="media/md-circle.svg" alt="medium circle with medium text">
+    <img src="media/lg-circle.svg" alt="large circle with large text">
+  </div>
   <form id="pizza-toppings">
     <div class="form-group">
-      <input type="checkbox" name="pizza-toppings-input" value="pepperoni">
-      pepperoni<br>
-      <input type="checkbox" name="pizza-toppings-input" value="pineapple">
-      pineapple<br>
-      <input type="checkbox" name="pizza-toppings-input" value="bacon">
-      bacon<br>
-    </div>
-    <div class="form-group">
-      <div class="radio">
+      <div class="form-check form-check-inline">
         <label>
           <input type="radio" name="size" value="Small" checked>
           Small
         </label>
       </div>
-      <div class="radio">
+      <div class="form-check form-check-inline">
         <label>
           <input type="radio" name="size" value="Medium">
           Medium
         </label>
       </div>
-      <div class="radio">
+      <div class="form-check form-check-inline">
         <label>
           <input type="radio" name="size" value="Large">
           Large
         </label>
       </div>
     </div>
-    <button type="submit">Add to order</button>
+
+    <div class="form-check radio-btn">
+      <input class="form-check-input" type="checkbox" name="pizza-toppings-input" value="pepperoni">
+      pepperoni<br>
+      <input class="form-check-input" type="checkbox" name="pizza-toppings-input" value="pineapple">
+      pineapple<br>
+      <input class="form-check-input" type="checkbox" name="pizza-toppings-input" value="bacon">
+      bacon<br>
+    </div>
+    <div class="d-grid gap-2 col-6 mx-auto">
+      <button class="btn btn-dark" type="submit">Add to order</button>
+    </div>
   </form>
-  <div id="order-details">
-    <h3>Your order details</h3>
-    <p><span class="order-size"></span> Pizza</p>
-    <p><span class="order-toppings"></span></p>
-    <p>Order total: $<span class="order-total"></span>.00</p>
+  <div class="detail-wrapper">
+    <div id="order-details">
+      <h3>Your order details</h3>
+      <p><span class="order-size"></span> Pizza</p>
+      <p><span class="order-toppings"></span></p>
+      <p>Order total: $<span class="order-total"></span>.00</p>
+    </div>
   </div>
 </div>
 
